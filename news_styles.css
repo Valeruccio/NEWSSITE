@@ -28,7 +28,11 @@ header .header-wrap .wparrer-header-block .logo {
     height: 100px;
 }
 
-.container.container-flex {
+
+main {
+    margin: 120px auto 0;
+    max-width: 1410px;
+    width: 100%;
     align-items: flex-start;
     display: flex;
     flex-wrap: wrap;
@@ -36,14 +40,34 @@ header .header-wrap .wparrer-header-block .logo {
     position: relative;
 }
 
-    .container {
-        padding: 0 15px;
-    }
-    .container {
-        margin: 120px auto 0;
-        max-width: 1410px;
-        width: 100%;
-    }
+.sidebar-left .title-sidebar {
+    background: #fff;
+    border-left: 2px solid #381432;
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+}
+
+.sidebar-left {
+    position: sticky;
+    top: 134px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: calc(100% - 320px);
+    width: 100%;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
 
 .footer-block {
     background: rgb(222, 200, 137);
