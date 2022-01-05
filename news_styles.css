@@ -1,3 +1,5 @@
+/*Хэдеры*/
+/*Основной класс хедера*/
 header {
     left: 0;
     position: fixed;
@@ -5,30 +7,35 @@ header {
     top: 0;
     z-index: 10000;
 }
-
+/*Класс отвечающий за цвет хедера*/
 header .header-wrap {
     background: rgb(222, 200, 137);
-}
-
-header .header-wrap .wparrer-header-block {
     align-items: center;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    margin: auto;
-    max-width: 1410px;
-    padding: 0 15px;
+    justify-content: flex-start;
     width: 100%;
+    align-content: flex-start;
+    flex-wrap: nowrap;
 }
 
-header .header-wrap .wparrer-header-block .logo {
+header .header-wrap .logo {
     background: url(/img/news.png) no-repeat 50%;
     background-size: contain;
     display: block;
     height: 100px;
 }
 
-.container.container-flex {
+header .header-wrap .name {
+    font-family: Helvetica, monospace; /* Гарнитура шрифта */
+    font-size: 200%;
+    font-stretch: ultra-condensed
+}
+
+main {
+    margin: 120px auto 0;
+    max-width: 1410px;
+    width: 100%;
     align-items: flex-start;
     display: flex;
     flex-wrap: wrap;
@@ -36,14 +43,34 @@ header .header-wrap .wparrer-header-block .logo {
     position: relative;
 }
 
-    .container {
-        padding: 0 15px;
-    }
-    .container {
-        margin: 120px auto 0;
-        max-width: 1410px;
-        width: 100%;
-    }
+.sidebar-left .title-sidebar {
+    background: #fff;
+    border-left: 2px solid #ff00d5;
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+}
+
+.sidebar-left {
+    position: sticky;
+    top: 134px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: calc(100% - 320px);
+    width: 100%;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
 
 .footer-block {
     background: rgb(222, 200, 137);
