@@ -28,22 +28,13 @@ header .header-wrap .wparrer-header-block .logo {
     height: 100px;
 }
 
-.container.container-flex {
-    align-items: flex-start;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    position: relative;
-}
 
-    .container {
-        padding: 0 15px;
-    }
-    .container {
+main {
         margin: 120px auto 0;
         max-width: 1410px;
         width: 100%;
     }
+
 
 .footer-block {
     background: rgb(222, 200, 137);
