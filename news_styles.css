@@ -1,24 +1,34 @@
+a {
+    text-decoration: none;
+    color: inherit;
+}
 header {
+    align-items: center;
     left: 0;
     position: fixed;
     right: 0;
     top: 0;
     z-index: 10000;
+    border-bottom: 2px solid #8a806c;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 header .header-wrap {
+    display: flex;
     background: rgb(222, 200, 137);
 }
 
 header .header-wrap .wparrer-header-block {
     align-items: center;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: flex-start;
     margin: auto;
     max-width: 1410px;
     padding: 0 15px;
     width: 100%;
+
 }
 
 header .header-wrap .wparrer-header-block .logo {
@@ -28,22 +38,73 @@ header .header-wrap .wparrer-header-block .logo {
     height: 100px;
 }
 
+header .header-wrap .wparrer-header-block .header-text {
+    display: block;
+    font-family: Courier New;
+    font-size: 190%;
+    color: #730000;
+}
+
+header .navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 10px;
+    flex-wrap: nowrap;
+    align-content: space-around;
+}
 
 main {
-        margin: 120px auto 0;
-        max-width: 1410px;
-        width: 100%;
-    }
+    margin: 150px auto;
+    margin-bottom: auto;
+    max-width: 1410px;
+    width: 70%;
 
+}
+
+.block {
+    margin-block: 5px;
+    border: 1px solid #D6D3D3;
+    border-bottom: 2px solid #C4C2C2;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-image: url("img/newspicture.jpg");
+    background-size: 100%;
+}
+
+.blockpicture {
+    float:left; /* Выравнивание по левому краю */
+    margin: 7px 7px 7px 0; /* Отступы вокруг картинки */
+    width: 50%;
+
+}
+
+.content-time {
+    margin: 10px;
+    font-family: Courier New;
+    font-size: 100%;
+}
+
+.content-title {
+
+}
+
+.content-text {
+    margin: 10px;
+    font-family: Courier New;
+    font-size: 180%;
+}
 
 .footer-block {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-top: 2px solid #8a806c;
     background: rgb(222, 200, 137);
-    min-height: 120px;
+    min-height: 20px;
     position: relative;
+
 }
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+
+
